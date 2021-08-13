@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG test</title>
+
+</head>
+
+
+<style>
+
+   rect.sky{
+       fill: lightskyblue;
+    }
+   rect.ground{
+       fill: green;
+    }
+    circle.kropp{
+    fill: white;
+    }
+    circle.sun{
+        fill: yellow;
+    }
+    ellipse.snow{
+        fill: rgb(248, 241, 227);
+    }
+    ellipse.hat{
+        fill: black;
+    }
+    circle.eyes{
+        fill: black;
+    }
+    line.arms{
+        fill: black;
+        stroke: brown;
+        stroke-width: 3px;
+    }
+    polygon.nose{
+        fill: orange;
+    }
+      #kropp{
+          fill: white;
+      } 
+
+
+
+</style>
+
+<body>
+    <h1>Test av SVG</h1>
+
+    <svg width="500" height="500">
+        <rect class="ground" width="500" height="500"></rect>
+        <rect class="sky" width="500" height="300"></rect>
+        <ellipse class="snow" cx="150" cy="363" rx="200" ry="65"></ellipse> 
+        
+        <circle class="sun" cx="470" cy="30" r="40"></circle>
+        
+
+        <circle class="kropp" cx="150" cy="150" r="30"/></circle>
+        <ellipse class="hat" cx="150" cy="125" rx="35" ry="5"></ellipse>
+        <rect class="hat" x="133" y="72" width="35" height="50"></rect>
+        <circle class="kropp" cx="150" cy="215" r="40"/></circle>
+        <circle class="kropp" cx="150" cy="300" r="50"/></circle>
+    
+        <circle class="eye" cx="160" cy="140" r="4"/></circle>
+        <circle class="eye" cx="140" cy="140" r="4"/></circle>
+        
+        <circle class="eye" cx="140" cy="160" r="2"/></circle>
+        <circle class="eye" cx="145" cy="163" r="2"/></circle>
+        <circle class="eye" cx="150" cy="164" r="2"/></circle>
+        <circle class="eye" cx="155" cy="163" r="2"/></circle>
+        <circle class="eye" cx="160" cy="160" r="2"/></circle>
+
+        <line class="arms" x1="120" y1="190" x2="70" y2="150"></line>
+        <line class="arms" x1="70" y1="150" x2="60" y2="130"></line>
+        <line class="arms" x1="70" y1="150" x2="50" y2="140"></line>
+        <line class="arms" x1="70" y1="150" x2="45" y2="150"></line>          
+    
+        <line class="arms" x1="180" y1="190" x2="250" y2="150"></line>
+        <line class="arms" x1="250" y1="150" x2="260" y2="130"></line>
+        <line class="arms" x1="250" y1="150" x2="270" y2="140"></line>
+        <line class="arms" x1="250" y1="150" x2="275" y2="150"></line>  
+
+        <polygon class="nose" points="160,148 153,153 150,150"</polygon>
+
+      </svg>
+
+
+      <div class="grid">
+        <div class="sky"></div>
+        <div class="ground"></div>
+
+
+      </div>
+</body>
+</html>
